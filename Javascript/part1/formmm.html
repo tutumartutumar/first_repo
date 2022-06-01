@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    input[type=text]{border-bottom: 3px solid rgb(223, 25, 223);
+      background-color: rgb(245, 216, 245);
+      color: yellowgreen;
+      width: 100%;
+      padding: 15px 20px ;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border-radius: 5px;
+   font-size: 20px;
+    }
+input[type=text]:focus{  
+  background-color: lightcoral;
+  border: 3px solid #555;}
+
+  .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor:pointer;
+}
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+.dropdown-content a:hover{color:green;}
+  .dropdown:hover .dropdown-content{display: block;}
+
+  .desc {
+  padding:15px;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+display:block;
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a[target]{background-color:yellow}
+
+[title~=flower] {
+  border: 5px solid rgb(209, 14, 112);
+}
+select{
+  background-color: #4CAF50;
+  border-radius:  4px;
+  padding: 15px;
+  color:whitesmoke;
+  width: 100;}
+
+  * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+
+  </style>
+</head>
+<body>
+ <form>
+  <label for="fname">First name</label>
+  <input type="text" id="fname" name="fname" placeholder="First name"><br>
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lname">
+ </form>
+
+ 
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p>
+
+<div class="dropdown" style:color "blue">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+<p>take a nap </p>
+  </div>
+
+</div><br><br>
+
+<div class="dropdown">
+  <h3>All i want is You</h3>
+  <span>all other want is blah blah</span>
+  <div class="dropdown-content">
+<p>loveU</p>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link1</a>
+    <a href="#">Link1</a>
+    <a href="#">Link1</a>
+    <a href="#">Link1</a>
+    <a href="#">Link1</a>
+  </div>
+</div>
+
+<h2>Aligned Dropdown Content</h2>
+<p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+<div class="dropdown" style="float:right">
+  <button class="dropbtn">Left</button>
+  <div class="dropdown-content" style="left: 0;">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Right</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+
+<h2>Dropdown Image</h2>
+<p>Move the mouse over the image below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <img src="image.jpg" alt="Cinque Terre" width="100" height="50">
+  <div class="dropdown-content">
+  <img src="image.jpg" alt="Cinque Terre" width="300" height="200">
+  <div class="desc">Beautiful Girl</div>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="food.jpeg">
+    <img src="food.jpeg" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Kachin rice</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image.jpg">
+    <img src="image.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Beautiful Girl</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="food.jpeg">
+    <img src="food.jpeg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Kachin rice</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="image.jpg">
+    <img src="image.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Beautiful Girl</div>
+</div><br><br><br>
+<a href="table1.html" target="_black"><h1>Table1</h1></a>
+<a href="ffont.html" target="_top"><h1>Ffont</h1></a>
+
+<h2>CSS [attribute~="value"] Selector</h2>
+<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+<img src="flower.jpeg" title="花が好きだ" width="150" height="113">
+<img src="flower2.jpeg" title="花が好きだ" width="224" height="162">
+<img src="gift.jpg" title="gift form cll" width="224" height="162">
+<br><br><br>
+<form>
+  <select>
+    <option>ミャンマー</option>
+    <option> イギリス</option>
+<option>タイ</option>
+<option>ドイツ</option>
+<option>かんごうく</option>
+  </select>
+</form>
+
+<input type="button" value="Button">
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+
+<h2>Responsive Form</h2>
+<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+<h1>HTML/CSS Tutorials</h1>
+<h2>HTML</h2>
+<h2>CSS</h2>
+<h2>Bootstrap</h2>
+<h2>W3.CSS</h2>
+
+<h1>Scripting Tutorials</h1>
+<h2>JavaScript</h2>
+<h2>jQuery</h2>
+<h2>React</h2>
+
+<h1>Programming Tutorials</h1>
+<h2>Python</h2>
+<h2>Java</h2>
+<h2>C++</h2>
+
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+  function myFunction() {
+    document.getElementById("demo").style.color = "red";
+  }
+  </script>
+  
+</body>
+</html> 

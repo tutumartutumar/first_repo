@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="popupOverlay.css">
+      <style>
+        .food {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px dashed rgb(45, 147, 231);
+            border-radius: 4px;
+            background-color: rgb(236, 51, 236);
+         }
+
+         
+      </style>
+   </head>
+   <body>
+      <p>Learn,</p>
+     <form>
+         <select id = "country" name = "country">
+            <option value = "java">Java</option>
+            <option value = "ruby">Ruby</option>
+            <option value = "oracle">Oracle</option>
+            <option value = "tableau">Tableau</option>
+         </select>
+      </form><br>
+
+      <form>
+          <select class="food" id="food" name="food" size="3">
+          <option>Pizza</option>
+          <option>Cake</option>
+          <option>Coffee</option>
+          <option value = "java">Java</option>
+            <option value = "ruby">Ruby</option>
+            <option value = "oracle">Oracle</option>
+            <option value = "tableau">Tableau</option>
+        </select>
+      </form>
+      
+      <h1>Popup/Modal Windows without JavaScript</h1>
+      <div class="box">
+        <a class="button" href="#popup1">Let me Pop up</a>
+      </div>
+      
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>Here i am</h2>
+          <a class="close" href="#">&times;</a>
+          <div class="content">
+            Thank to pop me out of that button, 
+            but now i'm done so you can close this window.
+          </div>
+        </div>
+      </div>
+      
+   </body>
+</html>

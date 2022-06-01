@@ -1,0 +1,79 @@
+/*@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    text-align: left;
+    font-family: Lato;
+    color: #fff; 
+   
+  }
+
+h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 30px;
+color: rgb(132, 206, 47);
+letter-spacing: 3px;
+padding: 25px;
+text-transform: uppercase;}
+
+span{font-size: 12px;
+display: block;}
+
+.tabs{width: 650px;
+    padding: 0;
+    float: none;
+    list-style-type: none;
+position: relative;
+text-align: left;
+margin:80px 0 0 10px ;
+
+}
+
+li{display:inline-block;
+    float: none;
+}
+
+label{
+    background-color: rgb(223, 100, 100);
+    font-size: 20px;
+    color: rgb(132, 206, 47);
+    padding: 8px 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    top: 4px;
+   
+}
+
+input[type="radio"]{position:absolute;
+    top: 0;
+    left: -9999px;}
+
+.tab-content{
+background-image: -webkit-linear-gradient(rgb(110, 218, 191),hotpink,rgb(212, 132, 179));
+    font-size: 20px;
+    padding: 5px 5px;
+    letter-spacing: 2px;
+    color: blue;
+    display: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+  [id^="tab"]:checked + label { 
+    top: 0;
+    padding-top: 17px; 
+    background: yellowgreen; 
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }*/
+
+
+

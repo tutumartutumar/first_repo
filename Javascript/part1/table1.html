@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+        <style>
+          table,th,td{
+              border: 1px solid brown;
+              border-collapse: collapse;
+          }
+          th,td{
+              padding-top: 10px;
+              padding-bottom: 20px;
+              padding-left: 30px;
+              padding-right: 40px;
+          }
+
+          tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+img{opacity:.5;
+padding: 15px;}
+img:hover{opacity:1.0;}
+
+div.background {
+  background-image: url(image.jpg) repeat;
+  border: 2px solid rgb(252, 108, 108);
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #b30f0f;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #32059b;
+}
+          </style>
+         
+        <table style="width: 300px;">
+            <tr>
+                <th>month</th>
+                <th>date</th>
+                <th>remarks</th>
+            </tr>
+            <tr style="height: 70px;">
+                <td>月曜日</td>
+                <td>2.3.22</td>
+                <td>good</td>
+            </tr>
+            <tr>
+                <td>火曜日</td>
+                <td>3.3.33</td>
+                <td>good</td>
+            </tr>
+            <br>
+            <br>
+        </table>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Tu Tu Mar</td>
+                <td>phue phue</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Kyaw Zaw Hein</td>
+                <td>Zaw zaw</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Pwint Pwint</td>
+                <td>eingyin</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <table>
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th>
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+          </tr>
+          </table>
+          <br>
+          <br>
+          <lable for="fname">First Name</lable><br>
+          <input type="text" id="fname" name="fname" required="required"><br>
+          <lable for="lname">Last Name</lable><br>
+          <input type="text" id="lname" name="lname" value="Joe" disabled><br>
+          <label for="pin">Pin</label><br>
+          <input type="text" id="pin" name="pin" size="6" maxlength="4"><br>
+          <label for="fil"><h2>Select File</h2></label>
+          <input type="file" id="fil" name="fil" multiple><br><br>
+          <input type="submit" value="Sign me up" >&nbsp;&nbsp;<input type="reset"><br><br>
+
+          <h2 style="color: aqua;">Select your favourite browser Check Box</h2>
+          <input type="checkbox" id="chrome" name="chrome" value="yes">
+          chrome<br>
+          <input type="checkbox" id="google" name="google" value="yes">
+          google<br>
+          <input type="checkbox" id="microsoft" name="microsoft" value="yes">
+          microsoft<br>
+
+          <h1><b>RadioButton</b></h1>
+          
+          <input type="radio" id="japan" name="japan" value="Japan">
+          <label for="japan">Japan is the best.</label><br>
+         
+          <input type="radio" id="myanmar" name="myanmar" value="Myanmar">
+          <label for="myanmar">Myanmar is the best.</label><br>
+          
+          <input type="radio" id="thailand" name="thailand" value="thailand">
+          <label for="Thailand">Thailand is the best.</label><br>
+          <h2>Input Button </h2>
+          <input type="button" onclick="alert('HelloMylove')" value="LoveU"><br><br>
+          <strong>input type Color</strong><br>
+          <label for="fav">favcolor</label>
+          <input type="color" id="fav" name="fav"><br>
+          <h2>Input Date min & max</h2>
+          <form >
+              <label for="birth">Enter a date after 2000-11-4 </label>;
+              <input type="date" id="birth" name="birth" max="2000-11-4"><br>
+              <label for="birth">Enter a date before 1999-11-4</label>;
+               <h3>Input Pattern Attribute and Placeholder Attribute</h3>
+              <label for="code">country Code</label>
+              <input type="text" id="code" name="code" pattern="[a-Za-z]{3}" title="Three letter country code"><br>
+              <label for="ph">Phone No.</label>
+              <input type="text" id="ph" name="ph" placeholder="123-457-99" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}">
+              
+          </form>
+
+          <form action="/index.html">
+            <h2>The Input require Attribute</h2>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" >
+            <input type="button" value="Submit"><br>
+            <h2>Inpute Step Attribute</h2>
+            <input type="number" id="point" name="point" step="4">
+            <label for="point">Point</label><br>
+            <h1>Input autofocus Attribute</h1>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" autofocus>
+            <lable for="lname">Last Name</lable>
+            <input type="text" id="lname" name="lname" >
+            <input type="submit" value="Sign me up" ><br>
+            <input type="image" src="flower.jpg"  width="48" height="48"> <br>
+            <input list="goods" name="browser">
+            <datalist id="goods">
+                <option value="Tea">
+                    <option value="Water">
+                    <option value="juice">
+                    <option value="Jelly">
+                    <option value="Chocolate">
+
+            </datalist><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="on"><br>
+            <input type="submit"><br>
+            
+        </form>
+        
+        <img src="image.jpg" alt="うれしい　私は　とても　かわいい" width="300px" height="250px">
+
+    <img src="image.jpg" alt="うれしい　私は　とても　かわいい" width="300px" height="250px">
+
+ <img src="image.jpg" alt="うれしい　私は　とても　かわいい" width="300px" height="250px">
+
+        
+    <div class="transbox">
+      <p>This is some text that is placed in the transparent box.</p>
+    </div>
+  </div> 
+</body>
+          
+        </html>

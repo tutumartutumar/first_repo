@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+<button onclick="document.getElementById('myImage').src='gift.jpg'">Gift</button>
+<img id="myImage" src="food.jpeg" style="width:100px">
+<button onclick="document.getElementById('myImage').src='food.jpeg'">Food</button>
+
+
+<h2 id="demo">What Can JavaScript Do?</h2>
+<button onclick="myFunction()">Click Me</button>
+<p id="demo"></p>
+<script src="myscript.js"></script>
+
+<p id="demo"></p>
+<p id="demo1">Student</p>
+<p id="demo2">First</p>
+<p id="demo3"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<script>
+let x,y,z;
+x=10;
+y=30;
+z=x+y;
+document.getElementById("demo").innerHTML="The sum is "+ z +".";
+document.getElementById("demo1").innerHTML="私は　学生に　教えるのが大好きです";
+document.getElementById("demo2").innerHTML=
+"私は　初めて　勉強するのが　好きじゃない　と　思いました";
+
+const car = ["Saab", "Volvo", "BMW"];
+car[1]="Toyota";
+car[4]="Tu Tu ";
+car.push("作文をかくのが　いやです");
+document.getElementById("demo3").innerHTML="They are "+car;
+/*var m=10**2;           
+document.getElementById("demo").innerHTML="Exponentation" + alert(m);
+
+let fruit=["banana","waterspinach","broccoli","cauliflower","ladyfinger"]
+let length=fruit.length;
+
+document.getElementById("demo5").innerHTML="Fruit length "+length;
+document.getE.getElementById("demo6").innerHTML="Fruit last Element is "+fruit[fruit.length-1];*/
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo7").innerHTML = fruits[fruits.length-2];
+
+document.getElementById("demo8").innerHTML=
+typeof 0 +"<br>"+
+typeof "Tu" +"<br>"+
+typeof 0.333;
+
+
+
+
+</script>
+
+</body>
+</html>
